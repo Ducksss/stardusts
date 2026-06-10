@@ -11,7 +11,7 @@ namespace so the slash commands do not collide with other Hack Club Slack bots.
 | Bot responds to messages | Bolt app registers slash command handlers in `src/index.ts`. |
 | At least 3 commands/functions | Four commands are implemented and tested. |
 | Commands do not collide | Every command uses the `/stardusts-*` namespace. |
-| Live 24/7 | Dockerfile and systemd service template are included. |
+| Live 24/7 | Vercel HTTP endpoint, Dockerfile, and systemd service template are included. |
 
 ## Slash Commands
 
@@ -26,13 +26,19 @@ Register these exact commands in the Slack app dashboard:
 
 ## Slack App Setup
 
-Create a Slack app with Socket Mode enabled, then add:
+For Vercel/serverless hosting, create a Slack app with these settings:
 
-- App-level token scope: `connections:write`
-- Bot token scopes: `commands`, `chat:write`
+- Bot token scope: `commands`
 - Slash commands: the four `/stardusts-*` commands listed above
+- Request URL for every command: `https://YOUR-VERCEL-DEPLOYMENT/api/slack`
 
-The app needs these environment variables for Socket Mode:
+The Vercel deployment needs this environment variable:
+
+```bash
+SLACK_SIGNING_SECRET=your-signing-secret
+```
+
+For Socket Mode hosting on a VPS instead, enable Socket Mode and set:
 
 ```bash
 SLACK_BOT_TOKEN=xoxb-your-bot-token
@@ -40,8 +46,8 @@ SLACK_APP_TOKEN=xapp-your-socket-mode-token
 SLACK_SOCKET_MODE=true
 ```
 
-`SLACK_SIGNING_SECRET` is only required when `SLACK_SOCKET_MODE=false` and Slack
-sends HTTP requests to the bot.
+`SLACK_SIGNING_SECRET` is required when Slack sends HTTP requests to the Vercel
+endpoint or to the Bolt HTTP receiver.
 
 ## Local Development
 
@@ -63,6 +69,18 @@ npm --workspace @stardusts/slack-bot test
 npm --workspace @stardusts/slack-bot run typecheck
 npm --workspace @stardusts/slack-bot run build
 ```
+
+## 24/7 Vercel Deployment
+
+From the repo root:
+
+```bash
+npx vercel@latest
+npx vercel@latest env add SLACK_SIGNING_SECRET
+npx vercel@latest --prod
+```
+
+Use the deployed `/api/slack` URL as the request URL for every slash command.
 
 ## 24/7 Nest Deployment
 
