@@ -4,6 +4,9 @@ export type AppId =
   | "mission-control"
   | "devlog"
   | "terminal"
+  | "launchpad"
+  | "theme-studio"
+  | "submission-capsule"
   | "browser"
   | "soundboard"
   | "slack"
@@ -13,6 +16,7 @@ export type AppId =
 
 export type AppDefinition = {
   id: AppId;
+  keywords: string[];
   name: string;
   icon: LucideIcon;
   accent: string;

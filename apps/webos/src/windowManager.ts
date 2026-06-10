@@ -2,10 +2,13 @@ import type { AppId, WindowState } from "./types";
 
 export const defaultWindows: WindowState[] = [
   { id: "mission-control", x: 60, y: 40, width: 412, height: 430, open: true, z: 4 },
-  { id: "terminal", x: 520, y: 40, width: 460, height: 300, open: true, z: 5 },
-  { id: "browser", x: 1000, y: 60, width: 360, height: 410, open: true, z: 3 },
-  { id: "devlog", x: 380, y: 340, width: 500, height: 250, open: true, z: 2 },
-  { id: "soundboard", x: 930, y: 440, width: 378, height: 190, open: true, z: 1 },
+  { id: "terminal", x: 520, y: 40, width: 460, height: 300, open: true, z: 6 },
+  { id: "launchpad", x: 398, y: 318, width: 370, height: 300, open: true, z: 3 },
+  { id: "theme-studio", x: 790, y: 58, width: 360, height: 390, open: true, z: 5 },
+  { id: "submission-capsule", x: 770, y: 366, width: 390, height: 250, open: true, z: 2 },
+  { id: "browser", x: 780, y: 60, width: 360, height: 410, open: false, z: 0 },
+  { id: "devlog", x: 380, y: 340, width: 500, height: 250, open: false, z: 0 },
+  { id: "soundboard", x: 760, y: 440, width: 378, height: 190, open: false, z: 0 },
   { id: "slack", x: 180, y: 330, width: 360, height: 210, open: false, z: 0 },
   { id: "hackpad", x: 660, y: 260, width: 390, height: 280, open: false, z: 0 },
   { id: "ship", x: 760, y: 330, width: 372, height: 230, open: false, z: 0 },
