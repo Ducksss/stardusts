@@ -1,0 +1,15 @@
+[Unit]
+Description=Stardusts Slack Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/YOUR_NEST_USER/stardusts
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/npm --workspace @stardusts/slack-bot start
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -5,7 +5,7 @@ Stardusts is a complete mission workspace for Hack Club Stardance:
 - a browser WebOS project ready for the WebOS 1 mission,
 - a WebOS 2 upgrade layer with custom theming, app search, and submission
   evidence export,
-- a Slack bot with three slash-command workflows for the Slack Bot mission,
+- a Slack bot with four slash-command workflows for the Slack Bot mission,
 - Hackpad design artifacts and a submission checklist,
 - a Stardance mission scraper/CLI that keeps mission metadata current, and
 - CI plus GitHub Pages deployment automation.
@@ -35,7 +35,7 @@ These statuses describe local repo readiness, not Stardance portal approval.
 | --- | --- | --- |
 | WebOS 1 | Built | `apps/webos` is a full interactive browser OS. |
 | WebOS 2 | Prepared, pending Stardance portal unlock | `apps/webos` adds Theme Studio, Launchpad, and Submission Capsule beyond WebOS 1. |
-| Make a Slack Bot | Built, needs Slack app credentials to go live | `apps/slack-bot` implements `/stardusts`, `/stardusts-mission`, and `/stardusts-launch`. |
+| Make a Slack Bot | Built, needs Slack app credentials to go live | `apps/slack-bot` implements `/stardusts-status`, `/stardusts-mission`, `/stardusts-launch`, and `/stardusts-help`. |
 | Hackpad | Design pack prepared | `hardware/hackpad` contains layout, generated PCB/outlines, firmware, BOM, and review notes. |
 
 ## Commands

@@ -34,8 +34,8 @@ Evidence to attach after credentials are configured:
 
 - GitHub repo: `apps/slack-bot`.
 - Hosting URL: Render/Fly/VPS URL or Socket Mode logs.
-- Slash command demo: `/stardusts`, `/stardusts-mission`, and
-  `/stardusts-launch`.
+- Slash command demo: `/stardusts-status`, `/stardusts-mission`,
+  `/stardusts-launch`, and `/stardusts-help`.
 
 Reviewer checklist:
 
@@ -50,9 +50,10 @@ are configured.
 Ready-to-paste reviewer note after deployment:
 
 ```text
-The Stardusts Slack bot is installed and hosted 24/7. It provides three
-namespaced slash commands: /stardusts for mission readiness, /stardusts-mission
-for mission-specific checklists, and /stardusts-launch for a launch plan.
+The Stardusts Slack bot is installed and hosted 24/7. It provides four
+namespaced slash commands: /stardusts-status for uptime and mission readiness,
+/stardusts-mission for mission-specific checklists, /stardusts-launch for a
+launch plan, and /stardusts-help for command discovery.
 ```
 
 ## Hackpad
