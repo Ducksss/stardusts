@@ -1,0 +1,107 @@
+{
+  "fetchedAt": "2026-06-10T10:03:59.644Z",
+  "source": "https://stardance.hackclub.com/missions",
+  "missions": [
+    {
+      "slug": "hackpad",
+      "url": "https://stardance.hackclub.com/missions/hackpad",
+      "title": "Hackpad",
+      "description": "Design your own mini keyboard from scratch, get all the parts for free! Check out the guide at https://hackpad.hackclub.com/guide",
+      "difficulty": "Beginner",
+      "guideLabel": "10-step guide",
+      "locked": false,
+      "meta": [
+        "Beginner",
+        "10-step guide"
+      ],
+      "status": "not started",
+      "sectionCount": 10,
+      "requirements": [],
+      "prizes": [],
+      "guideUrls": [
+        "https://stardance.hackclub.com/guides",
+        "https://hackpad.hackclub.com/guide",
+        "https://stardance.hackclub.com/missions/hackpad/guide"
+      ]
+    },
+    {
+      "slug": "slack-bot",
+      "url": "https://stardance.hackclub.com/missions/slack-bot",
+      "title": "Make a Slack Bot",
+      "description": "Make a slack bot that can respond to custom slash commands!",
+      "difficulty": "Beginner",
+      "guideLabel": "8-step guide",
+      "locked": false,
+      "meta": [
+        "Beginner",
+        "8-step guide"
+      ],
+      "status": "not started",
+      "estimatedTime": "~1 hr 30 min",
+      "sectionCount": 8,
+      "requirements": [
+        "Your bot is live and responds to messages",
+        "There are at least 3 different commands / functions",
+        "Your commands don’t collide with anyone elses’",
+        "Your bot is live 24/7, even when your laptop is closed"
+      ],
+      "prizes": [],
+      "guideUrls": [
+        "https://stardance.hackclub.com/guides",
+        "https://stardance.hackclub.com/missions/slack-bot/guide"
+      ]
+    },
+    {
+      "slug": "web-os-1",
+      "url": "https://stardance.hackclub.com/missions/web-os-1",
+      "title": "WebOS 1",
+      "description": "Make your very own OS that can be run in the web! This is a beginner friendly workshop based around making your own web page. Follow the guide and make it your own to complete this mission and unlock WebOS 2, where you can customize it further!",
+      "difficulty": "Beginner",
+      "locked": false,
+      "meta": [
+        "Beginner"
+      ],
+      "status": "not started",
+      "estimatedTime": "~2 hr 30 min",
+      "requirements": [
+        "Have a working webpage with multiple draggable windows",
+        "It should look like your own and not exactly like the guide",
+        "Have at least 3 devlogs showing your progress along the way",
+        "Have at least 1 new feature that the guide didn’t list",
+        "It shouldn’t have a password (so anyone can test it out!)"
+      ],
+      "prizes": [
+        "50 stardust Yours to spend in the shop!",
+        "WebOS Sticker An exclusive sticker for completing the WebOS 1 mission!",
+        "Unlocks WebOS 2 Completing this mission will unlock the WebOS 2 mission"
+      ],
+      "guideUrls": [
+        "https://stardance.hackclub.com/guides",
+        "https://jams.hackclub.com/batch/webOS"
+      ]
+    },
+    {
+      "slug": "web-os-2",
+      "url": "https://stardance.hackclub.com/missions/web-os-2",
+      "title": "WebOS 2",
+      "description": "Customize your WebOS further to make it your own! Make the theme fully custom, add your own apps, and do anything else to make it feel unique. (to do this mission, complete WebOS 1 first!)",
+      "difficulty": "Intermediate",
+      "locked": true,
+      "meta": [
+        "Intermediate",
+        "Locked"
+      ],
+      "status": "not started",
+      "estimatedTime": "~2 hr",
+      "requirements": [
+        "at least 3 new features from what you submitted to WebOS 1"
+      ],
+      "prizes": [
+        "WebOS Stickersheet! An incredible exclusive stickersheet you can get just from the WebOS 2 mission!"
+      ],
+      "guideUrls": [
+        "https://stardance.hackclub.com/guides"
+      ]
+    }
+  ]
+}

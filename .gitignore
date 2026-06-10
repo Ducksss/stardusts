@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+apps/webos/.vite/
+playwright-report/
+test-results/

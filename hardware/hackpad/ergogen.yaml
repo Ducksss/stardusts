@@ -1,0 +1,82 @@
+units:
+  kx: 19
+  ky: 19
+  px: kx + 2
+  py: ky + 2
+
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [0, 0]
+      columns:
+        outer:
+        pinky:
+        ring:
+        index:
+      rows:
+        bottom:
+        home:
+        top:
+  rotate: 0
+
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  board:
+    - what: polygon
+      points:
+        - ref: matrix_outer_top
+          shift: [-12, 12]
+        - ref: matrix_index_top
+          shift: [31, 12]
+        - ref: matrix_index_bottom
+          shift: [31, -34]
+        - ref: matrix_outer_bottom
+          shift: [-12, -12]
+      fillet: 3
+
+pcbs:
+  stardusts_hackpad:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        adjust:
+          shift: [7, -5]
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+      encoder:
+        what: rotary
+        where:
+          ref: matrix_index_bottom
+          shift: [0, -25]
+        params:
+          from: ENC_A
+          to: ENC_B
+          A: P2
+          B: P3
+          C: GND
+      controller:
+        what: promicro
+        where:
+          ref: matrix_outer_home
+          shift: [-29, -6]
+          rotate: -90
+        params:
+          orientation: down

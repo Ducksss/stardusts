@@ -1,0 +1,20 @@
+{
+  "name": "@stardusts/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "stardusts": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4"
+  }
+}

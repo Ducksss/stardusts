@@ -1,0 +1,34 @@
+{
+  "name": "stardusts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mission workspace and automation for Hack Club Stardance projects.",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:webos": "npm --workspace @stardusts/webos run dev",
+    "lint": "npm run lint --workspaces --if-present",
+    "missions:sync": "npm --workspace @stardusts/cli run start -- sync --write ../../missions/stardance-missions.json",
+    "test": "npm run test --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "keywords": [
+    "stardance",
+    "hackclub",
+    "missions",
+    "automation",
+    "webos",
+    "slack"
+  ],
+  "author": "Chai Pin Zheng",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  }
+}

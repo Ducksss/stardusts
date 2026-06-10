@@ -1,0 +1,9 @@
+Reference,Part,Quantity,Notes
+SW1-SW12,Choc hotswap switch sockets,12,Low-profile switches
+D1-D12,1N4148 SMD diodes,12,Per-key matrix diodes
+MCU,Pro Micro compatible controller,1,USB-C preferred
+ENC1,EC11 rotary encoder,1,Mission scrubber / volume
+K1-K12,1u Choc keycaps,12,Custom legends optional
+CASE,3D printed case,1,See case/stardusts_case.scad
+SCREWS,M2 screws and standoffs,8,Case assembly
+PCB,Custom PCB,1,Export from KiCad after DRC
