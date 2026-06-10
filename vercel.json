@@ -1,5 +1,6 @@
 {
   "buildCommand": "npm --workspace @stardusts/slack-bot run build",
+  "outputDirectory": "public",
   "functions": {
     "api/slack.ts": {
       "maxDuration": 10
